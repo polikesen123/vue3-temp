@@ -5,6 +5,7 @@ const {
 } = require('unplugin-vue-components/resolvers');
 const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
+    lintOnSave: false,
     configureWebpack: config => {
         const basePlugins = [
             components({
